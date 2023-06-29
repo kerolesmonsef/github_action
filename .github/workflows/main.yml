@@ -43,7 +43,9 @@ jobs:
           host: '190.92.178.146'
           username: 'allin1'
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: '67y-ExC7&j(('
+
+          passphrase: '-rD0X)1=WD[sQJ.3v$'
+          port: 7822
           script: |
             # Run your remote commands here
             echo "Hello, SSH!"
