@@ -49,5 +49,5 @@ jobs:
             cd tttt.allin1.social
             git add . && git commit -m "new commit from server"
             php -v
-            composer install
+            /opt/cpanel/composer/bin/composer install
             
