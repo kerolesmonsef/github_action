@@ -7,8 +7,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -43,11 +41,12 @@ jobs:
           host: '190.92.178.146'
           username: 'allin1'
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-          passphrase: '67y-ExC7&j(('
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: 7822
           script: |
             # Run your remote commands here
             echo "Hello, SSH!"
             cd tttt.allin1.social
-            ls
+            git add . && git commit -m "new commit from server"
+            composer install
+            

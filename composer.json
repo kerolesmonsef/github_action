@@ -1,0 +1,17 @@
+{
+    "name": "kero/github_action",
+    "autoload": {
+        "psr-4": {
+            "Kero\\GithubAction\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kerolesmonsef",
+            "email": "kerolesmonsef@gmail.com"
+        }
+    ],
+    "require": {
+        "larapack/dd": "^1.1"
+    }
+}
