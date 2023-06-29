@@ -41,7 +41,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: "67y-ExC7&j(("
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
 
       - name: Deploy code
         run: |
