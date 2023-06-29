@@ -1,3 +1,3 @@
 <?php
-
-echo "new";
+include "vendor/autoload.php";
+dd("this is shit");
