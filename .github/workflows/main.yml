@@ -31,11 +31,22 @@ jobs:
         
       - name: Run Ls Command
         run: ls
-      
+
+      - name: print secret
+        run: echo ${{ secrets.SSH_PRIVATE_KEY }}
 
       # Runs a set of commands using the runners shell
-      - name: Run Shell Script
-        run: sh ./excute.sh
+#      - name: Run Shell Script
+#        run: sh ./excute.sh
+#
+#      - name: Set up SSH keys
+#        uses: webfactory/ssh-agent@v0.5.0
+#        with:
+#          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+#
+#      - name: Deploy code
+#        run: |
+#          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "ls"
 
   this-is-another-build:
     runs-on: ubuntu-latest
