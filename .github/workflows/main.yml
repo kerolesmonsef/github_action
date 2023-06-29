@@ -47,6 +47,7 @@ jobs:
             # Run your remote commands here
             echo "Hello, SSH!"
             cd tttt.allin1.social
+            ls
 #            git add . && git commit -m "new commit from server"
 #            composer install
             
