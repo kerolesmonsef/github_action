@@ -48,6 +48,7 @@ jobs:
             echo "Hello, SSH!"
             cd tttt.allin1.social
             git add . && git commit -m "new commit from server"
+            git pull origin main
             php -v
             /opt/cpanel/composer/bin/composer install
             
