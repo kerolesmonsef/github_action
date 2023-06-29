@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  this-build-can-change:
+  deploy-to-server:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -47,11 +47,3 @@ jobs:
 #      - name: Deploy code
 #        run: |
 #          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "ls"
-
-  this-is-another-build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Run a one-line script
-        run: echo Hello, world! agin
