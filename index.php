@@ -1,4 +1,6 @@
 <?php
 include "vendor/autoload.php";
-dd("this is shit");
+if (method_exists("dd"))
+    dd("this is shit");
+die("shit");
 // ss

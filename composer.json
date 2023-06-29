@@ -10,8 +10,5 @@
             "name": "kerolesmonsef",
             "email": "kerolesmonsef@gmail.com"
         }
-    ],
-    "require": {
-        "larapack/dd": "^1.1"
-    }
+    ]
 }
